@@ -1,35 +1,34 @@
 defmodule ExLinguaSentence.Mixfile do
-  use Mix.Project
+    use Mix.Project
 
-  def project do
-    [app: :ex_lingua_sentence,
-     version: "0.1.0",
-     elixir: "~> 1.3",
-     build_embedded: Mix.env == :prod,
-     start_permanent: Mix.env == :prod,
-     deps: deps()]
-  end
+    def project do
+        [
+            app: :ex_lingua_sentence,
+            version: "0.1.0",
+            elixir: "~> 1.3",
+            build_embedded: Mix.env == :prod,
+            start_permanent: Mix.env == :prod,
+            deps: deps,
+            package: package
+        ]
+    end
 
-  # Configuration for the OTP application
-  #
-  # Type "mix help compile.app" for more information
-  def application do
-    [applications: [:logger],
-     mod: {ExLinguaSentence, []}]
-  end
+    def application do
+        [ applications: [ :logger ] ]
+    end
 
-  # Dependencies can be Hex packages:
-  #
-  #   {:mydep, "~> 0.3.0"}
-  #
-  # Or git/path repositories:
-  #
-  #   {:mydep, git: "https://github.com/elixir-lang/mydep.git", tag: "0.1.0"}
-  #
-  # Type "mix help deps" for more examples and options
-  defp deps do
-    [
-      {:exactor, "~> 2.2.2", warn_missing: false}
-    ]
-  end
+    defp deps do
+        [
+            { :exactor, "~> 2.2.2", warn_missing: false }
+        ]
+    end
+
+    defp package do
+        [
+            files: [ "lib", "mix.exs", "README", "LICENSE*", "share" ],
+            maintainers: [ "Stephen Riley" ],
+            licenses: [ "GNU LESSER GENERAL PUBLIC LICENSE v3" ],
+            links: %{ "GitHub" => "https://github.com/stephen-riley/ex_lingua_sentence" }
+        ]
+    end
 end
