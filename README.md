@@ -10,15 +10,6 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 
     ```elixir
     def deps do
-      [{:ex_lingua_sentence, "~> 0.1.0"}]
+      [{:ex_lingua_sentence, "~> 0.1.1"}]
     end
     ```
-
-  2. Ensure `ex_lingua_sentence` is started before your application:
-
-    ```elixir
-    def application do
-      [applications: [:ex_lingua_sentence]]
-    end
-    ```
-
