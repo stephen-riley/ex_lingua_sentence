@@ -1,8 +1,6 @@
 # ExLinguaSentence
 
-Separates a paragraph of text into sentences.  
-A port of the [Lingua::Sentence](http://search.cpan.org/~achimru/Lingua-Sentence-1.05/lib/Lingua/Sentence.pm) perl library.  
-See [here](http://cpansearch.perl.org/src/ACHIMRU/Lingua-Sentence-1.05/share/) for a list of supported languages.
+Separates a paragraph of text into sentences.  A port of the [Lingua::Sentence](http://search.cpan.org/~achimru/Lingua-Sentence-1.05/lib/Lingua/Sentence.pm) perl library.  See [here](http://cpansearch.perl.org/src/ACHIMRU/Lingua-Sentence-1.05/share/) for a list of supported languages.
 
 ## Installation
 
